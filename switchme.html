@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head><title>Switch</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+ 
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-control
+{
+  background: none;
+  border-radius: 50px;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;}
+
+
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+float: center;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}@media (max-width: 768px) { 
+    
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+</style>
+<style>
+    #iname{
+  border:none;
+  border-bottom: 1px solid grey;
+  width: 327px;
+} 
+.banner-image{
+          padding-bottom: 50px;     margin-bottom: 20px;     text-align: center;     color: #ffffff;
+    background: url(https://images.pond5.com/girl-wirtes-number-credit-card-footage-089754370_prevstill.jpeg) no-repeat center;     background-size: cover; width:100%; height: auto;
+    background-position: absolute;
+
+}
+#inner-bannerimage{
+      padding-top: 9%;     width:150%;   margin-left: -130px;
+}
+a{
+   color: white;
+}
+.search-bar{
+  margin-left: 150px;
+  margin-bottom: 50px;
+  background-color:rgba(1,1,1,0.6);
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 20px;
+
+}
+.checked {
+  color: orange;
+}
+.check{
+  color: rgba(24,133,243,0.8);
+}
+.homie{
+  margin-left: 450px;
+}
+.carl{
+ color: rgba(24,133,243,0.8); 
+}
+@media (min-width: 768px) {
+    .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: 1.4;
+    }
+}
+</style>
+<script>
+$(document).ready(function() {
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 2000,
+  });
+});
+</script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+  <div class="banner-image flex-column flex-sm-row flex-md-row mb-0">
+   <nav class="navbar navbar-expand-md navbar-tabs justify-content-between">
+  <h2 class="navbar-brand">SWITCHME</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+   <div class="homie"> <ul class="navbar-nav">
+      <li class="nav-item active mr-4">
+        <a class="nav-link navbar" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"href="#">Ads</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Switch 1</a>
+          <a class="dropdown-item" href="#">Switch 2</a>
+          <a class="dropdown-item" href="#">Switch 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link my-2 my-sm-0" href="#">Contact</a>
+      </li>
+      <li class="nav-item" style="margin-left: 20px;">
+        <h5>|</h5>
+      </li>
+      
+      <li class="nav-item" style="margin-left: 50px;">
+        <a class="nav-link my-2 my-sm-0" href="#">Login</a>
+      </li>
+      <li class="nav-item" style="margin-left: 20px;">
+        <button class="nav-link btn btn-primary">Register</button>
+      </li>
+    </ul>
+</div>  </div>
+  <div class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  </nav>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-10">
+          <div class="text-center text-lg-center" id="inner-bannerimage">
+  <div class="display-4">Welcome To Switch Me</div><br>
+        <div class="display-6">Lorem ipsum dolor sit amet, eam copiosae postulant disputando eu.</div><br>
+        </div>  
+      <div class="search-bar">
+          <form>
+  <div class="row">
+    <div class="col-lg-4 d-flex align-items-center form-group">
+      <input type="text" class="form-control" placeholder="What are you looking for?"> 
+    </div>
+    <div class="col-lg-3 d-flex align-items-center form-group">
+      <input type="text" class="form-control" placeholder="Location">
+      </div>
+    <div class="col-lg-3 d-flex align-items-center form-group no-divider">
+      <select id="inputState" class="form-control">
+        <option selected>All Categories</option>
+        <option>...</option>
+      </select>
+    </div>
+  <button type="submit" class="btn btn-primary btn-block rounded-lg h-100 col-md-2">Search</button>
+  </div>
+</form><br>
+    </div>
+  </div></div>
+  
+  <div class="row">
+  <span style="margin-left: 150px; margin-top: -40px;"><div class="col">Trending Search:</div></span>
+  <span style="margin-left: -20px; margin-top: -40px;"><div class="col"><button type="button" class="btn btn-outline-light btn-sm text-grey">iPhone</button>
+</div></span>
+<span style="margin-left: -20px; margin-top: -40px;"><div class="col"><button type="button" class="btn btn-outline-light  btn-sm text-grey">Cars</button>
+</div></span>
+<span style="margin-left: -20px; margin-top: -40px;"><div class="col flex-md-row"><button type="button" class="btn btn-outline-light btn-sm text-grey ">Flowers</button>
+</div></span>
+<span style="margin-left: -20px; margin-top: -40px;"><div class="col flex column d-flex flex-md-row"><button type="button" class="btn btn-outline-light btn-sm text-grey">House</button>
+</div></span>
+<br><br>
+</div>
+</div></div>
+<div class="jumbotron">
+  <div class="container">
+    <h3 class="display-5 text-dark">Featured Ads</h3><br>
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+
+
+    <div class="carousel-item active">
+<div class="row">
+<div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrtqbd5BQAYLoR-rBuu7wBomdFEex0RIpoeY--m8A_md0jcTCvQ" alt="Card image cap">
+  <div class="card-body"><p>
+    <span class="badge badge-secondary card-title">Furniture</span> <span class="fa fa-heart check mr-2" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary">Wooden Chair & Table</div>
+                <h6 class="display-6 text-secondary">Don St,Brooklyn, New York</h6><br>
+                <div><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+    
+     <div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwPJLnj5n-h7hSUg3SZ81eyK7ac_phPwWgVz8IZBYLv3kZxrX" alt="Card image cap">
+  <div class="card-body">
+    <span class="badge badge-secondary card-title">Electronics</span> <span class="fa fa-heart check mr-2" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary">iPhone X Gray</div>
+                <h6 class="display-6 text-secondary">Don St,Brooklyn, New York</h6><br>
+                <div><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+    
+<div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2AON8_9IoJZvyHyU9OzuS91hAn-4q6S5FWsB3pkOD-xAgJgd_A" alt="Card image cap">
+  <div class="card-body">
+     <span class="badge badge-secondary card-title">Cars & Vehicles</span> <span class="fa fa-heart check mr-2" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary">New Black Car</div>
+                <h6 class="display-6 text-secondary">Don St,Brooklyn, New York</h6><br>
+                <div><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+<div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://image.freepik.com/free-photo/loving-smiling-young-couple-sitting-yellow-sofa-their-new-house_23-2148095450.jpg" alt="Card image cap">
+  <div class="card-body">
+    <span class="badge badge-secondary card-title">Real Estate</span> <span class="fa fa-heart check mr-2" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary">Own New House</div>
+                <h6 class="display-6 text-secondary">Don St,Brooklyn, New York</h6><br>
+                <div><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+
+
+   
+  </div>
+ <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol><br><br>
+   <div class="controls text-center">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+ 
+</div>
+
+
+</div>
+</div>
+</p></div></div>
+<div class="container">
+  <h4 class="display-5 text-primary text-center">Popular Categories</h4>
+  <h6 class="display-6 text-secondary text-center">Lorem Ipsum Dolor Sit Amet</h6>
+  <hr width="10%" height="50%" class="bg-primary" style="float: center;"><br>
+  <table cellpadding="30%" style="text-align: center; margin-bottom: 95px;">
+    <tr>
+    <td><div class="col"><span class="fa fa-car carl fa-3x"></span><br>
+          Cars & Vehicles<br><span class="badge badge-secondary">1,921</span>
+    </div></td>
+    <td><div class="col"><span class="fas fa-couch carl fa-3x"></span><br>
+          Furniture<br><span class="badge badge-secondary">2,339</span></div>
+    </td><td><div class="col"><span class="fas fa-home carl fa-3x"></span><br>
+          Real Estate<br><span class="badge badge-secondary">4,398</span></div>
+    </td><td><div class="col"><span class="fas fa-book-open carl fa-3x"></span><br>
+          Books & Magazines<br><span class="badge badge-secondary">3,298</span></div>
+    </td><td><div class="col"><span class="fa fa-tv carl fa-3x"></span><br>
+        Electronics<br><span class="badge badge-secondary">2,932</span></div>
+    </td><td><div class="col"><span class="fas fa-pizza-slice carl fa-3x"></span><br>
+          Other<br><span class="badge badge-secondary">183</span></div></td>
+  </tr>
+</table>
+
+</div>
+
+<div class="jumbotron">
+<div class="container">
+<h4 class="display-5 text-primary">Trending Now</h4>
+ <hr width="5%" height="30%"class="bg-primary" style="float: left;"><br><br>
+  <div class="row mb-4">
+    <div class="col">
+    <div class="card" style=" width:15 rem;">
+      <div class="row ">
+        <div class="col-md-4 pr-5">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuZHHZD1sUFWsLK9OFk5u2O8kZPhG5ReLtsBL6vNEN1WeDTjLS" >
+          </div>
+          <div class="col-md-8 pr-3">
+            <div class="card-block my-3 ml-4" style="text-align: center;">
+              <h5 class="card-title"><span class="badge badge-secondary ml-2">Real Estate</span><span class="fa fa-heart check mr-4" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary">Own New House</div>
+                <h6 class="display-6 text-secondary" style="margin-left: 50px;">St.,Brooklyn, New York</h6><br>
+                <div style="margin-left: 70px;"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="col">
+    <div class="card" style=" width:18 rem;">
+      <div class="row ">
+        <div class="col-md-4 pr-5">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2AON8_9IoJZvyHyU9OzuS91hAn-4q6S5FWsB3pkOD-xAgJgd_A" >
+          </div>
+          <div class="col-md-8 pr-1">
+            <div class="card-block my-3 ml-1" style="text-align: center;">
+              <h5 class="card-title"><span class="badge badge-secondary" style="margin-left: 50px;">Cars & Vehicles</span><span class="fa fa-heart check mr-4" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary"  style="margin-left: -15px;">New Black Car</div>
+                <h6 class="display-6 text-secondary" style="margin-left: 50px;">St.,Brooklyn, New York</h6><br>
+                <div style="margin-left: 70px;"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+    <div class="card" style=" width:18 rem;">
+      <div class="row ">
+        <div class="col-md-4 pr-5">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrtqbd5BQAYLoR-rBuu7wBomdFEex0RIpoeY--m8A_md0jcTCvQ" >
+          </div>
+          <div class="col-md-8 pr-3">
+            <div class="card-block my-3 ml-4" style="text-align: center;">
+              <h5 class="card-title"><span class="badge badge-secondary mr-2">Furniture</span><span class="fa fa-heart check mr-4" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary ml-4">Wooden Chair & Table</div>
+                <h5 class="display-6 text-secondary" style="margin-left: 70px;">St.,Brooklyn, New York</h5><br>
+                <div style="margin-left: 70px;"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="col">
+    <div class="card" style=" width:18 rem;">
+      <div class="row ">
+        <div class="col-md-4 pr-5">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwPJLnj5n-h7hSUg3SZ81eyK7ac_phPwWgVz8IZBYLv3kZxrX" >
+          </div>
+          <div class="col-md-8 pr-3">
+            <div class="card-block my-3 ml-4" style="text-align: center;">
+              <h5 class="card-title"><span class="badge badge-secondary mr-2">Electronics</span><span class="fa fa-heart check mr-4" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary mr-4">iPhone X Gray</div>
+                <h5 class="display-6 text-secondary" style="margin-left: 85px;">St.,Brooklyn, New York</h5><br>
+                <div style="margin-left: 70px;"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    <div class="card" style=" width:18 rem;">
+      <div class="row ">
+        <div class="col-md-4 pr-5">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrtqbd5BQAYLoR-rBuu7wBomdFEex0RIpoeY--m8A_md0jcTCvQ" >
+          </div>
+          <div class="col-md-8 pr-3">
+            <div class="card-block my-3 ml-4" style="text-align: center;">
+              <h5 class="card-title"><span class="badge badge-secondary mr-2">Furniture</span><span class="fa fa-heart check mr-4" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary ml-4">Wooden Chair & Table</div>
+                <h5 class="display-6 text-secondary" style="margin-left: 70px;">St.,Brooklyn, New York</h5><br>
+                <div style="margin-left: 70px;"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="col">
+    <div class="card" style=" width:15 rem;">
+      <div class="row ">
+        <div class="col-md-4 pr-5">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuZHHZD1sUFWsLK9OFk5u2O8kZPhG5ReLtsBL6vNEN1WeDTjLS" >
+          </div>
+          <div class="col-md-8 pr-3">
+            <div class="card-block my-3 ml-4" style="text-align: center;">
+              <h5 class="card-title"><span class="badge badge-secondary ml-2">Real Estate</span><span class="fa fa-heart check mr-4" style="float: right;"></span></h5>
+              <p class="card-text"><div class="display-5 text-primary">Own New House</div>
+                <h5 class="display-6 text-secondary" style="margin-left: 85px;">St.,Brooklyn, New York</h5><br>
+                <div style="margin-left: 70px;"><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span><span class="display-6 text-secondary mr-2">(3 Reviews)</span></div>
+              </p>          </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="container">
+  <h4 class="display-5 text-primary text-center">Testimonials</h4>
+<hr width="7%" class="bg-primary" style="float: center;">
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel" style="margin-left:  425px">
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+      
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3" style="float: center; margin-left: 50px;">
+                  <img class="img-circle img-rounded" src="https://image.shutterstock.com/image-photo/happy-businessman-isolated-handsome-man-260nw-609414131.jpg" style="width: 140px;height:100px; float: center;border-radius: 100px;">
+                </div><div class="row">
+                <div class="col" style="float: center;text-align: center;  width: 100%;">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                  <small style="text-align: center; margin-left: 40px;">Someone famous</small>
+                </div></div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        <br>
+        <div style="text-align: center;" class="ml-5">
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a></div>
+      </div>                          
+    </div>
+  </div>
+</div>
+</div>
+</div></div></div>
+
+<div class="jumbotron">
+  <div class="container">
+  <h4 class="display-5 text-primary text-center">Our Blog</h4>
+  <h6 class="display-6 text-secondary text-center">See our Daily News and Updates</h6>
+  <hr width="10%" height="50%" class="bg-primary" style="float: center;"><br>
+<div class="row">
+<div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrtqbd5BQAYLoR-rBuu7wBomdFEex0RIpoeY--m8A_md0jcTCvQ" alt="Card image cap">
+  <div class="card-body">
+    <span class="badge badge-secondary card-title">Many People Selling Online</span><br> <h6 class="display-6 text-secondary">by Mark Spicer . Jan 18,2019</h6></h5>
+              <p class="card-text">
+                <h6 class="display-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan.</h6><br>
+                </p>          </div>
+          </div>
+</div>
+    
+     <div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwPJLnj5n-h7hSUg3SZ81eyK7ac_phPwWgVz8IZBYLv3kZxrX" alt="Card image cap">
+  <div class="card-body">
+     <span class="badge badge-secondary card-title">Many People Selling Online</span><br> <h6 class="display-6 text-secondary">by Mark Spicer . Jan 18,2019</h6></h5>
+              <p class="card-text">
+                <h6 class="display-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan.</h6><br>
+                </p>          </div>
+          </div>
+</div>         
+    
+<div class="col pb-4 ml-1">
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2AON8_9IoJZvyHyU9OzuS91hAn-4q6S5FWsB3pkOD-xAgJgd_A" alt="Card image cap">
+  <div class="card-body">
+     <span class="badge badge-secondary card-title">Many People Selling Online</span><br> <h6 class="display-6 text-secondary">by Mark Spicer . Jan 18,2019</h6></h5>
+              <p class="card-text">
+                <h6 class="display-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan.</h6><br>
+                </p>          </div>
+          </div>
+        </div><br>
+<button class="btn btn-primary btn-md" style="margin-left: 525px;">View All Posts</button>
+  </div></div></div>
+
+    <div class="row bg-primary">
+<div class="col-sm-3">
+<div class="display-5 text-light mt-3 mb-3 ml-5">Newsletter</div>
+<span class="text-light ml-5 mt-0 mb-3">Lorem ipsum dolor sit amet </span></div>
+    <div class="col-sm-3 mt-3 mb-3" style="margin-left: 369px">
+<div class="form-group">
+  <input type="text" class="form-control bg-primary text-light" id="iname" placeholder="Email" style="border-bottom-style: white;px;"></div><div class="col"><button class="btn btn-secondary">Subscribe</button>
+</form>
+  </div></div>
+</div>
+<div class="bg-secondary text-dark pt-5 pb-5 pl-3 pr-3">
+  <table cellspacing="50%" cellpadding="30%" >
+    
+    <tr style="padding-left: 55px;" class="display-5 text-light">
+      <th>About</th>
+      <th>Navigators</th>
+      <th>Follow Us</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor sit amet,consectetur <br>elit.Ut rutrum elit in arcu blandit,<br> eget pretium nisl accumsan.<br> Sed ultricies commodo tortor.</td>
+      <td>
+        <ul style="list-style-type: none;">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>     
+      </ul></td>
+      <td><span class="fab fa-facebook-f"></span> <span class="fab fa-instagram"></span> <span class=""></span><span class="fab fa-twitter"></span> <span class="fab fa-linkedin-in"></span></td>
+      <td><div class="form-group">
+    <span><input type="text" class="form-control bg-secondary text-white" placeholder="Search Products" style="border-bottom-style: white;"></div><span class="col mt-0"><button class="btn btn-primary">Search</button></span>
+</span> </form>
+</td>
+    </tr>
+  </table>   <br>
+    <hr width="50%" style="float:center;">
+<footer style="text-align: center; margin-bottom: 50px;">Copyright &copy; All Rights Reserved <span class="display-5">|SwitchMe</span></footer></div>
+</body>
+</html>
